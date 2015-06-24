@@ -99,8 +99,8 @@ function(table, who=colnames(table), populations,popA=NA, popB=NA,  # for workin
 #Population means
 popnames <- names(populations)
 popP <- rep(NA, length(popnames));names(popP)<- popnames
-cA <-  mean(result$pc.ind[populations[["popA"]],1]) 
-cB <-  mean(result$pc.ind[populations[["popB"]],1]) 
+cA <-  mean(result$pc.ind[populations[[popA]],1]) 
+cB <-  mean(result$pc.ind[populations[[popB]],1]) 
 for(p in popnames){
 popP[p]<- (cB- mean(result$pc.ind[populations[[p]],1]) )/(cB-cA)
 }
@@ -160,8 +160,8 @@ result$indP <- (cB - result$pc.ind[,1])/(cB-cA)
 
   #2. NORMALISE - each individual SNP
   fun_normalise <- function(x){(2*x-(UPPER+LOWER))/(UPPER-LOWER)} #define function for nomalisation
-  UPPER= rowMeans(result$sig[,populations[["popA"]]],na.rm=TRUE)
-  LOWER= rowMeans(result$sig[,populations[["popB"]]],na.rm=TRUE)
+  UPPER= rowMeans(result$sig[,populations[[popA]]],na.rm=TRUE)
+  LOWER= rowMeans(result$sig[,populations[[popB]]],na.rm=TRUE)
   result$signals <- (apply(result$sig, 2, FUN= fun_normalise))
   diff <- abs(UPPER-LOWER)
   result$signals[diff <= tol] <- 0	

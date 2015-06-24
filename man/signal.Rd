@@ -69,7 +69,7 @@ Returns an object of class \code{adsig}, a list with the following components:
 
 }
 \references{
-For further details, see accompanying paper.
+Sanderson, J., H. Sudoyo, T.M. Karafet, M.F. Hammer and M.P. Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481.
 }
 \author{
 Jean Sanderson
