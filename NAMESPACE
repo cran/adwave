@@ -1,2 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 import(waveslim)
+importFrom("graphics", "abline", "lines", "plot", "polygon")
+importFrom("stats", "approx", "filter", "var")
