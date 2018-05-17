@@ -6,7 +6,7 @@ Produces wavelet summaries for each individual and group. Returns the wavelet va
 }
 \usage{
 wavesum(x, populations, popA = NA, popB = NA, ml = NULL, type = "la8",
-	t.factor = 1, fullWT = FALSE)
+    t.factor = 1, fullWT = FALSE)
 }
 
 \arguments{
@@ -14,7 +14,7 @@ wavesum(x, populations, popA = NA, popB = NA, ml = NULL, type = "la8",
 object of class \code{adsig}. 
 }
   \item{populations}{
-list containing vector of individual IDs for each population in the analysis. 
+list containing a vector of individual IDs for each population in the analysis. 
 }
   \item{popA}{
 name of ancestral population 1 (used for forming the axes of variation). Must match one of the names in \code{populations}. 
@@ -45,26 +45,25 @@ The code returns a list with the following components:
 
 \item{n.ind}{number of individuals in the analysis.}
 \item{n.group}{number of groups in the analysis.}
-\item{rv.ind}{matrix of dimension \eqn{n \times ml}, returning the raw wavelet variance for each individual.}
-\item{rv.group}{matrix of dimension \eqn{n.group \times ml}, returning the raw wavelet variance for each group.}
+\item{rv.ind}{matrix of dimension \eqn{n x ml}, returning the raw wavelet variance for each individual.}
+\item{rv.group}{matrix of dimension \eqn{n.group x ml}, returning the raw wavelet variance for each group.}
 \item{threshold }{vector of length \eqn{ml}, returning threshold values for each wavelet scale.}
-\item{iv.ind}{matrix of dimension \eqn{n \times ml}, returning the informative (thresholded) wavelet variance for each individual.}
-\item{iv.group}{matrix of dimension \eqn{n.group \times ml}, returning the informative (thresholded) wavelet variance for each group.}
+\item{iv.ind}{matrix of dimension \eqn{n x ml}, returning the informative (thresholded) wavelet variance for each individual.}
+\item{iv.group}{matrix of dimension \eqn{n.group x ml}, returning the informative (thresholded) wavelet variance for each group.}
 \item{abs.ind}{vector of length \eqn{n}, returning the average block size metric (ABS) for each individual.}
 \item{abs.group}{vector of length \code{n.group}, returning the average block size metric (ABS) for each group.}
 \item{pws.ind}{vector of length \eqn{n}, returning the peak wavelet scale for each individual.}
 \item{pws.group}{vector of length \code{n.group}, returning the peak wavelet scale for each group.}
-\item{wtmatrix}{ \emph{(only if \code{fullWT=TRUE})}. Array of dimension \eqn{T \times n \times ml}, containing squared wavelet coefficients for each individual.}
-\item{wtmatrix.group}{\emph{(only if \code{fullWT=TRUE})}. Array of dimension \eqn{T \times n.group \times ml}, squared wavelet coefficients, averaged for each group.}
+\item{wtmatrix}{ \emph{(only if \code{fullWT = TRUE})}. Array of dimension \eqn{T x n x ml}, containing squared wavelet coefficients for each individual.}
+\item{wtmatrix.group}{\emph{(only if \code{fullWT = TRUE})}. Array of dimension \eqn{T x n.group x ml}, squared wavelet coefficients, averaged for each group.}
 
 }
 \references{
-Sanderson, J., H. Sudoyo, T.M. Karafet, M.F. Hammer and M.P. Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481.
+Sanderson J, H Sudoyo, TM Karafet, MF Hammer and MP Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481. \url{https://doi.org/10.1534/genetics.115.176842}
 }
 \author{
 Jean Sanderson
 }
-
 
 
 
@@ -75,8 +74,8 @@ Jean Sanderson
 data(admix)
 
 # Generate the admixture signal 
-AdexPCA <- signal(admix$data,popA="popA",popB="popB",populations=admix$populations,tol=0.001,
-		n.signal=NULL)
+AdexPCA <- signal(admix$data,popA="popA",popB="popB",populations=admix$populations,
+  tol=0.001, n.signal=NULL)
 
 # Compute wavelet summaries
 WSN <- wavesum(AdexPCA,populations=admix$populations,popA="popA",popB="popB")

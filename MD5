@@ -1,11 +1,10 @@
-5183eef7c16f626996897bd2859a413c *DESCRIPTION
+c3edd1fb3d7c7853627d1988d146a705 *DESCRIPTION
 b401a495bd1ff83637032fd1a0c90c8e *NAMESPACE
 d4cfa8c9f81627de8558295b89ae626d *R/plotsignal.R
 7a326d6d088c5bc65415419fa72df5fe *R/signal.R
 e2f317277fecc6a335cc829e92e7f57e *R/wavesum.R
 bbaf9c22e74b340363f425aff78b0a6e *data/admix.rda
-17c398c5bfc638333b4dcf28a0f31cd0 *man/admix.Rd
-4bffa316d1eef950b8787d5c5faa9e5a *man/adwave-package.Rd
-3599a4e36b3a2856c9ce0b2039d221b7 *man/plotsignal.Rd
-f6abcf4a1c448b5152be375789e957a0 *man/signal.Rd
-d0c80c655686cbfcc228664542f2d54f *man/wavesum.Rd
+8c08875f1f72663e6522e214e5ed955c *man/admix.Rd
+d89ba99deda0a46b5f2fa7d5025f1e5f *man/plotsignal.Rd
+9da7f2023104f326691f0216fa98e913 *man/signal.Rd
+72c01dd304506880288f993b85ca1147 *man/wavesum.Rd

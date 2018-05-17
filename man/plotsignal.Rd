@@ -40,7 +40,7 @@ character giving ID of a single individual to plot.
 Produces figure.
 }
 \references{
-Sanderson, J., H. Sudoyo, T.M. Karafet, M.F. Hammer and M.P. Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481.
+Sanderson J, H Sudoyo, TM Karafet, MF Hammer and MP Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481. \url{https://doi.org/10.1534/genetics.115.176842}
 }
 \author{
 Jean Sanderson
@@ -51,7 +51,6 @@ Jean Sanderson
 \code{\link{signal}}
 }
 \examples{
-
 data(admix)
 
 # Generate the admixture signal with windowing
