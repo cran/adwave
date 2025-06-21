@@ -23,9 +23,9 @@ Further description of the dataset can be found in Sanderson et al. (2015). The 
 }
 
 \references{
-Sanderson J, H Sudoyo, TM Karafet, MF Hammer and MP Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481. \url{https://doi.org/10.1534/genetics.115.176842}
+Sanderson J, H Sudoyo, TM Karafet, MF Hammer and MP Cox. 2015. Reconstructing past admixture processes from local genomic ancestry using wavelet transformation. \emph{Genetics} 200:469-481. \doi{10.1534/genetics.115.176842}
 
-Chen GK, P Marjoram and JD Wall. 2009. Fast and flexible simulation of DNA sequence data. \emph{Genome Research} 19:136-142. \url{https://doi.org/10.1101/gr.083634.108}
+Chen GK, P Marjoram and JD Wall. 2009. Fast and flexible simulation of DNA sequence data. \emph{Genome Research} 19:136-142. \doi{10.1101/gr.083634.108}
 }
 \examples{
 data(admix)
